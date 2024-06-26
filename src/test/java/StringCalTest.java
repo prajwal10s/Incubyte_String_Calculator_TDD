@@ -69,6 +69,12 @@ public class StringCalTest {
         catch(RuntimeException rne){
             assertEquals("Negative values are not allowed -1, -2, -3", rne.getMessage());
         }
-
     }
+    //TASK 6
+    //TODO: Numbers bigger than 1000 should be ignored
+    @Test
+    public void shuldIgnoreNumberGreaterThan1000(){
+        assertEquals(2, add("1001,2"));
+    }
+
 }

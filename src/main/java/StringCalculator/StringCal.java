@@ -44,7 +44,7 @@ public class StringCal {
         for(int i=0;i<size;i++){
             int curr = Integer.parseInt(nums[i]);
             if(curr<0)negatives.add(nums[i]);
-            sum+= curr;
+            if(curr<1000 && curr>=0)sum+= curr;
         }
 
         String negative = String.join(", ",negatives);
