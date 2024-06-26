@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 
 public class StringCalTest {
-
+    //TASK 1
     //test for empty string
     @Test
     public void returnZeroOnEmptyInput(){
@@ -21,5 +21,13 @@ public class StringCalTest {
     @Test
     public void returnSameNumberForSingleNumber(){
         assertEquals(2,add("2"));
+    }
+
+    //TASK2
+    //test for multiple strings separated by comma
+    //output should be sum of all
+    @Test
+    public void returnSumOfAllNumbers(){
+        assertEquals(14, add("2,3,4,5"));
     }
 }
