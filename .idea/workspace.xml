@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8e354f-a1b6-4ecb-b177-a3b09684de8c" name="Changes" comment="Calling Add with a negative number will throw an exception">
+    <list default="true" id="bd8e354f-a1b6-4ecb-b177-a3b09684de8c" name="Changes" comment="Number bigger than 1000 should be ignored">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringCalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalTest.java" afterDir="false" />
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719425074264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Number bigger than 1000 should be ignored">
+      <option name="closed" value="true" />
+      <created>1719425410385</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719425410385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,6 +129,7 @@
     <MESSAGE value="Adding NewLine as an additional delimiter with comma" />
     <MESSAGE value="Allow custom delims" />
     <MESSAGE value="Calling Add with a negative number will throw an exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calling Add with a negative number will throw an exception" />
+    <MESSAGE value="Number bigger than 1000 should be ignored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Number bigger than 1000 should be ignored" />
   </component>
 </project>

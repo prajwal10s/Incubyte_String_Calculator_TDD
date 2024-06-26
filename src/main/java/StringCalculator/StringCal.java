@@ -22,11 +22,19 @@ public class StringCal {
     }
 
     private static String[] splitCustomDelimiter(String numbers) {
-        Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(numbers);
-        matcher.matches();
-        String delim = matcher.group(1);
-        String newNumbers = matcher.group(2);
-        return newNumbers.split(Pattern.quote(delim));
+        //Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(numbers);
+        Matcher matcher = Pattern.compile("//(\\[.*?\\]|.)\\n(.*)").matcher(numbers);
+        if (matcher.matches()) {
+            String delim = matcher.group(1);
+            String newNumbers = matcher.group(2);
+            // Remove the square brackets from the delimiter if present
+            if (delim.startsWith("[") && delim.endsWith("]")) {
+                delim = delim.substring(1, delim.length() - 1);
+            }
+            return newNumbers.split(Pattern.quote(delim));
+        } else {
+            throw new IllegalArgumentException("Invalid input format");
+        }
     }
     //below method is to check for custom delimiter
     private static boolean hasCustomDelimiter(String numbers) {
