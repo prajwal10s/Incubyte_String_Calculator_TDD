@@ -1,5 +1,7 @@
 package StringCalculator;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,9 +40,15 @@ public class StringCal {
     private static int calSum(String[] nums, int size){
         int sum = 0;
         if(size==0)return 0;
+        List<String> negatives = new ArrayList<>();
         for(int i=0;i<size;i++){
-            sum+= Integer.parseInt(nums[i]);
+            int curr = Integer.parseInt(nums[i]);
+            if(curr<0)negatives.add(nums[i]);
+            sum+= curr;
         }
+
+        String negative = String.join(", ",negatives);
+        if(negatives.size()>0)throw new RuntimeException("Negative values are not allowed "+negative);
         return sum;
     }
 }

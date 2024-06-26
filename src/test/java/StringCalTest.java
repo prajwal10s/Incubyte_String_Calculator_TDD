@@ -46,4 +46,29 @@ public class StringCalTest {
         assertEquals(3,add("//;\n1;2"));
         assertEquals(6,add("//;\n1;2;3"));
     }
+
+    //TASK 5
+    //TODO: throw an exception if add is called with negative numbers
+    @Test
+    public void shouldThrowExceptionForNegative(){
+        try{
+            add("1,-2,3");
+            fail("Exception");
+        }
+        catch(RuntimeException rne){
+            assertEquals("Negative values are not allowed -2", rne.getMessage());
+        }
+
+    }
+    @Test
+    public void shouldThrowExceptionForNegatives(){
+        try{
+            add("-1,-2,-3");
+            fail("Exception");
+        }
+        catch(RuntimeException rne){
+            assertEquals("Negative values are not allowed -1, -2, -3", rne.getMessage());
+        }
+
+    }
 }
