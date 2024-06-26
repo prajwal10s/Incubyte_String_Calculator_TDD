@@ -30,4 +30,11 @@ public class StringCalTest {
     public void returnSumOfAllNumbers(){
         assertEquals(14, add("2,3,4,5"));
     }
+
+    //TASK3
+    //Allow the Add method to handle new lines between numbers instead of commas
+    @Test
+    public void allowNewlineAndCommaAsDelim(){
+        assertEquals(6,add("1\n2,3"));
+    }
 }
