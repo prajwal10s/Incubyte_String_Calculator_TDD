@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8e354f-a1b6-4ecb-b177-a3b09684de8c" name="Changes" comment="Adding NewLine as an additional delimiter with comma">
+    <list default="true" id="bd8e354f-a1b6-4ecb-b177-a3b09684de8c" name="Changes" comment="Allow custom delims">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator/StringCal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StringCalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalTest.java" afterDir="false" />
@@ -87,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719422074283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding NewLine as an additional delimiter with comma">
+      <option name="closed" value="true" />
+      <created>1719422833804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719422833804</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -95,6 +103,7 @@
     <MESSAGE value="Adding testcases for single digit and sum of two digits" />
     <MESSAGE value="Adding testcase for sum of all numbers in a string" />
     <MESSAGE value="Adding NewLine as an additional delimiter with comma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding NewLine as an additional delimiter with comma" />
+    <MESSAGE value="Allow custom delims" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow custom delims" />
   </component>
 </project>
