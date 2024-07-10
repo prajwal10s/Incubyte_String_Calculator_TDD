@@ -78,10 +78,15 @@ public class StringCalTest {
     }
 
     //TASK 7
-    //TODO: Delims can be of any length
+
     @Test
     public void allowAnyLengthDelim(){
         assertEquals(10, add("//[***]\n1***2***3***4"));
+    }
+    //new task
+    @Test
+    public void handleAsteriskAsCustomDelim(){
+        assertEquals(24, add("//*\n2*3*4"));
     }
 
 }
